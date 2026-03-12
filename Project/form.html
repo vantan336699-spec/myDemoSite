@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Добавить задачу</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="form.html">Добавить задачу</a>
+            <a href="stats.html">Статистика</a>
+            <a href="about.html">О проекте</a>
+            <button id="theme-toggle" class="btn secondary-btn" style="margin-left: auto;">🌙 Темная</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Добавить новую задачу</h1>
+        <form id="task-form" class="form-container">
+            <div class="form-group">
+                <label for="task-title">Название задачи:</label>
+                <input type="text" id="task-title" placeholder="Например: Купить молоко">
+            </div>
+            <div class="form-group">
+                <label for="task-priority">Приоритет:</label>
+                <select id="task-priority">
+                    <option value="">Выберите приоритет</option>
+                    <option value="Низкий">Низкий</option>
+                    <option value="Средний">Средний</option>
+                    <option value="Высокий">Высокий</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="task-date">Срок выполнения:</label>
+                <input type="date" id="task-date">
+            </div>
+            <div class="form-actions">
+                <button type="button" id="btn-cancel" class="btn secondary-btn">Отмена</button>
+                <button type="submit" class="btn primary-btn">Сохранить</button>
+            </div>
+        </form>
+    </main>
+    <script src="js/theme.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
